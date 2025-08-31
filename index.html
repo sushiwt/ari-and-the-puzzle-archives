@@ -7,8 +7,16 @@
     <style>
         body {
             background-color:black;
-            font-family:sans-serif;
+            background-image: url("img/bricks.png");
             color:white;
+            font-family:sans-serif;
+
+            margin:0;
+            height:100vh;
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .panel {
@@ -26,10 +34,17 @@
             border-image-width: 16px;
             border-image-slice: 16 fill;
 
-            
-            padding:16px ;
-
+            padding:16px;
         }
+
+        .inset {
+            border-image: url("img/inset.png");
+            border-image-width: 16px;
+            border-image-slice: 16 fill;
+
+            padding:16px;
+        }
+
 
         a {
             color:white;
@@ -45,7 +60,7 @@
             </a>
         </div>
         <br>
-        <div class="button">
+        <div class="inset">
             <strong>Downloads:</strong>
             <br>
             <a href="archives/aatp-1.2.1.zip">
